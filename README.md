@@ -1,5 +1,6 @@
 # Building a SOC + Honeynet in Azure (Live Traffic)
-![Cloud Honeynet / SOC](https://github.com/user-attachments/assets/809b985d-f7d8-451d-959c-341c0eb0df26)
+![Cloud Honeynet / SOC](https://github.com/user-attachments/assets/8131775f-15e4-4108-aa12-ec0a5690c3c0)
+
 
 
 ## Introduction
@@ -13,11 +14,13 @@ In this project, I build a mini honeynet in Azure and ingest log sources from va
 - AzureNetworkAnalytics_CL (Malicious Flows allowed into our honeynet)
 
 ## Architecture Before Hardening / Security Controls
-![Architecture Before hardening](https://github.com/user-attachments/assets/3481cadb-8924-4cc2-acaa-bbca888c7a76)
+![Architecture Before hardening](https://github.com/user-attachments/assets/3c0ce4e0-102f-4f3c-a92c-4639ad9011c8)
+
 
 
 ## Architecture After Hardening / Security Controls
-![After Hardening](https://github.com/user-attachments/assets/4318e343-8ec3-417f-ab27-f3cf9bdab33d)
+![After Hardening](https://github.com/user-attachments/assets/c6da70e5-a637-434d-b691-cd8d653c80c5)
+
 
 
 The architecture of the mini honeynet in Azure consists of the following components:
@@ -35,12 +38,10 @@ For the "BEFORE" metrics, all resources were originally deployed, exposed to the
 For the "AFTER" metrics, Network Security Groups were hardened by blocking ALL traffic with the exception of my admin workstation, and all other resources were protected by their built-in firewalls as well as Private Endpoint
 
 ## Attack Maps Before Hardening / Security Controls
-[NSG Allowed Inbound Malicious Flows]![Screenshot 2024-09-29 182341](https://github.com/user-attachments/assets/b550ec12-509d-4e2c-88db-b1f618a5d3d9)
-<br>
-[Linux Syslog Auth Failures]![Screenshot 2024-09-29 182046](https://github.com/user-attachments/assets/cd198c41-020c-4932-84a3-8cf77013fef2)
-<br>
-[Windows RDP/SMB Auth Failures]![Screenshot 2024-09-29 182541](https://github.com/user-attachments/assets/9503d99b-1452-4008-93b6-4441dbe0517a)
-<br>
+![linux-ssh-auth-fail](https://github.com/user-attachments/assets/99d41a74-51c7-441a-bca0-883f52a81f04)
+![nsg-malicious-allowed-in](https://github.com/user-attachments/assets/6529b4e3-3291-423c-a93f-3849c907ac13)
+![windowss-rdp-auth-fail](https://github.com/user-attachments/assets/6a25ce65-883d-40cc-a76b-d2f7156f7c95)
+
 
 ## Metrics Before Hardening / Security Controls
 
