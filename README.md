@@ -5,7 +5,7 @@
 
 ## Introduction
 
-In this project I build a honeynet in Azure and ingest log sources from various resources into a Log Analytics workspace, which is then used by Microsoft Sentinel to build attack maps, trigger alerts, and create incidents.
+The goal of this project was to build a honeynet in azure to showcase 
 
 ## Objective
 
@@ -20,15 +20,21 @@ In this project I build a honeynet in Azure and ingest log sources from various 
 
 
 
-The architecture of the mini honeynet in Azure consists of the following components:
+## **Technologies, Regulations, and Azure Components Employed:**
 
 - Virtual Network (VNet)
 - Network Security Group (NSG)
 - Virtual Machines (2 windows, 1 linux)
-- Log Analytics Workspace
+- Log Analytics Workspace with Kusto Query Language (KQL) Queries
 - Azure Key Vault
 - Azure Storage Account
-- Microsoft Sentinel
+- Microsoft Sentinel for (SIEM)
+- Microsoft Defender for Cloud to protect cloud resources
+- Windows RDP for remote access
+- Command Line Interface (CLI) for system management
+- PowerShell for automation and configuration management
+- NIST SP 800-53 Revision 5 for security controls
+- NIST SP  800-61 Revision 2 for Incident Handling Guidance
 
 
 
