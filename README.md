@@ -106,6 +106,28 @@ whenever you click show secret in the key vault this will create a log in the di
 
 ![Screenshot 2024-11-29 125932](https://github.com/user-attachments/assets/6759eaa1-4341-44b4-81d4-32d5a269846f)
 
+## NIST 800-61 Incident Management Lifecycle
+
+**Step 1: Preparation**
+
+**Step 2: Detection & Analysis** 
+
+-Set Severity, Status, Owner  
+-View Full Details (New Experience)  
+-Observe the Activity Log (for history of incident)  
+-Observe Entities and Incident Timelines (are they doing anything else?)  
+-“Investigate” the incident and continue trying to determine the scope  
+-Inspect the entities and see if there are any related events  
+-Determine legitimacy of the incident (True Positive, False Positive, etc.)  
+-If True Positive, continue, if False positive, close it out  
+
+**Step 3: Containment, Eradication, and Recovery**
+
+**Step 4: Document Findings/Info and Close out the Incident in Sentinel**
+
+![Screenshot 2024-11-29 160759](https://github.com/user-attachments/assets/60726cf1-3ab0-42bd-b5ca-25109f6af337)
+
+![Screenshot 2024-11-29 164204](https://github.com/user-attachments/assets/5af9d93d-6c33-4ba4-9f1c-f7bb34d4709b)
 
 ## Conclusion
 
