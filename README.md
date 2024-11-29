@@ -20,7 +20,6 @@ This project involves the creation of a Security Operations Center (SOC) and hon
 - Windows RDP for remote access
 - Command Line Interface (CLI) for system management
 - PowerShell for automation and configuration management
-- NIST SP 800-53 Revision 5 for security controls
 - NIST SP  800-61 Revision 2 for Incident Handling Guidance
   
 ## Architecture Before Hardening / Security Controls
