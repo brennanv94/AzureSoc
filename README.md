@@ -78,6 +78,35 @@ Stop Time	2024-11-29 01:31:06
 | SecurityIncident         | 0
 | AzureNetworkAnalytics_CL | 0
 
+
+## Simulated Attacks
+The simulated attacks that were used below were to generate incidents that would need to be addressed in a real world scenario.
+
+
+**AAD Brute Force Success**
+Started off by generating multiple failed login attempts with one succesful generating a brute force success.
+
+![Screenshot 2024-11-29 122216](https://github.com/user-attachments/assets/390ff88c-e521-43c5-8bb9-07101dcf50d1)
+
+
+**MSSQL Brute Force Attempt**
+I used powershell script to generate 30 failed login attempts.
+
+![Screenshot 2024-11-29 124339](https://github.com/user-attachments/assets/d4d68480-7d1b-481c-8631-e6edd51e1beb)
+
+
+**Malware outbreak**
+I used a powershell script that contained a string that would trigger an alert for antimalware detection. 
+
+![Screenshot 2024-11-29 125142](https://github.com/user-attachments/assets/57991fe5-a9f2-4ce0-b07c-64dbf405aad4)
+
+
+**Trigger Possible Privilege Escalation**
+whenever you click show secret in the key vault this will create a log in the diagnostic setting in key vault. Sentinel will then query LAW and will see the log in there and generate an incident.
+
+![Screenshot 2024-11-29 125932](https://github.com/user-attachments/assets/6759eaa1-4341-44b4-81d4-32d5a269846f)
+
+
 ## Conclusion
 
 This project demonstrates a comprehensive approach to building and hardening a SOC and honeynet in Azure. By initially deploying a vulnerable environment and assessing its security posture, I was able to implement robust security controls, significantly reducing attack surfaces and malicious activity. Key takeaways include understanding how to analyze and respond to live traffic, leveraging Microsoft Sentinel for monitoring and incident response, and using Azure’s built-in security features for proactive defense. This endeavor highlights my hands-on expertise in cloud security and my ability to apply practical solutions to real-world challenges.
