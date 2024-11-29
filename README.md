@@ -5,19 +5,18 @@
 
 ## Introduction
 
-The goal of this project was to build a honeynet in azure to showcase 
+This project involves the creation of a Security Operations Center (SOC) and honeynet environment in Azure, designed to monitor and analyze live malicious traffic. Leveraging my skills in network systems and cybersecurity, this setup includes Windows and Linux virtual machines, integrated logging through Azure Log Analytics, and security orchestration with Microsoft Sentinel. The goal was to simulate real-world attack scenarios, analyze security events, and evaluate the effectiveness of hardened controls. Metrics such as Windows Event Logs, Linux Syslogs, security alerts, and malicious network traffic flows were monitored pre- and post-hardening to demonstrate measurable improvements in security posture.
 
-## Objective
 
 ## Architecture Before Hardening / Security Controls
 ![Architecture Before hardening](https://github.com/user-attachments/assets/ced174d6-603b-412a-8590-713acf03e2ce)
 
-
+In the initial configuration, the environment was purposefully left vulnerable to simulate common security gaps and capture attack data. Virtual machines were deployed with unrestricted Network Security Groups (NSGs), leaving them open to all inbound and outbound traffic. Firewalls were disabled and public endpoints were exposed to the internet for key resources like Azure Key Vault and Azure Storage Account.
 
 ## Architecture After Hardening / Security Controls
 ![After Hardening](https://github.com/user-attachments/assets/e8cdcbb9-34e0-49e8-b19a-1f60dc64200a)
 
-
+After implementing security controls, the environment was significantly hardened to reduce its attack surface. Network Security Groups (NSGs) were configured to block all traffic except from a designated admin workstation, and private endpoints were implemented for resources like Azure Key Vault and Storage Account. Built-in firewalls were properly configured on all virtual machines, ensuring only necessary ports were open. These measures effectively restricted unauthorized access, minimized exposure to malicious traffic, and enhanced overall security.
 
 
 ## **Technologies, Regulations, and Azure Components Employed:**
