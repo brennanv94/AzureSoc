@@ -110,6 +110,8 @@ whenever you click show secret in the key vault this will create a log in the di
 
 **Step 1: Preparation**
 
+Initiated this already by ingesting all of the logs into Log Analytics Workspace and Sentinel and configuring alert rules.
+
 **Step 2: Detection & Analysis** 
 
 -Set Severity, Status, Owner  
