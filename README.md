@@ -85,6 +85,4 @@ Stop Time	2024-09-24 19:20:45
 
 ## Conclusion
 
-In this project, a mini honeynet was constructed in Microsoft Azure and log sources were integrated into a Log Analytics workspace. Microsoft Sentinel was employed to trigger alerts and create incidents based on the ingested logs. Additionally, metrics were measured in the insecure environment before security controls were applied, and then again after implementing security measures. It is noteworthy that the number of security events and incidents were drastically reduced after the security controls were applied, demonstrating their effectiveness.
-
-It is worth noting that if the resources within the network were heavily utilized by regular users, it is likely that more security events and alerts may have been generated within the 24-hour period following the implementation of the security controls.
+This project demonstrates a comprehensive approach to building and hardening a SOC and honeynet in Azure. By initially deploying a vulnerable environment and assessing its security posture, I was able to implement robust security controls, significantly reducing attack surfaces and malicious activity. Key takeaways include understanding how to analyze and respond to live traffic, leveraging Microsoft Sentinel for monitoring and incident response, and using Azure’s built-in security features for proactive defense. This endeavor highlights my hands-on expertise in cloud security and my ability to apply practical solutions to real-world challenges.
